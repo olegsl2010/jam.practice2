@@ -1,7 +1,7 @@
 package ua.olegsl.lesson2;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btnPlus;
     private Button btnMinus;
+    private Button btnOrder;
     private TextView twQuantity;
     private TextView twPrise;
     private int mPrise=0;
@@ -23,9 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnMinus = (Button) findViewById(R.id.btnMinus);
         btnPlus = (Button) findViewById(R.id.btnPlus);
+        btnOrder = (Button) findViewById(R.id.btnOrder);
 
         btnPlus.setOnClickListener(this);
         btnMinus.setOnClickListener(this);
+        btnOrder.setOnClickListener(this);
+
 
         twQuantity = (TextView) findViewById(R.id.twQuantity);
         twPrise = (TextView) findViewById(R.id.twPrise);
@@ -41,6 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnMinus:
                 decriment();
+                break;
+            case R.id.btnOrder:
+
+                break;
 
         }
     }
