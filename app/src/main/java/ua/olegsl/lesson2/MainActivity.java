@@ -8,12 +8,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnPlus;
-    private Button btnMinus;
-    private Button btnOrder;
     private TextView twQuantity;
     private TextView twPrise;
-    private int mPrise=0;
+//    private int mPrise=0;
     private int mQuantity =0;
 
 
@@ -22,9 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnMinus = (Button) findViewById(R.id.btnMinus);
-        btnPlus = (Button) findViewById(R.id.btnPlus);
-        btnOrder = (Button) findViewById(R.id.btnOrder);
+        Button btnMinus = (Button) findViewById(R.id.btnMinus);
+        Button btnPlus = (Button) findViewById(R.id.btnPlus);
+        Button btnOrder = (Button) findViewById(R.id.btnOrder);
 
         btnPlus.setOnClickListener(this);
         btnMinus.setOnClickListener(this);
